@@ -1,0 +1,9 @@
+{
+	"name": "Python + MongoDB + BeautifulSoup",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+	"mounts": [
+	  "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+	],
+	"postCreateCommand": "pip install --upgrade pip && pip install beautifulsoup4 pymongo requests && git config --global user.email 'guillaume.chinzi@hotmail.be' && git config --global user.name 'Solid32'"
+  }
+  
